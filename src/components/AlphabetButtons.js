@@ -1,17 +1,27 @@
+// AlphabetButtons.js
+
 import React from 'react';
 
-const AlphabetButtons = ({ onClick }) => {
-  const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const AlphabetButtons = ({ onClick, disabledLetters }) => {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-  return (
-    <div className="alphabet-buttons">
-      {alphabets.map((letter, index) => (
-        <button key={index} onClick={() => onClick(letter)}>
-          {letter}
-        </button>
-      ))}
-    </div>
-  );
+    const handleClick = (letter) => {
+        onClick(letter);
+    };
+
+    return (
+        <div className="alphabet-buttons">
+            {alphabet.split('').map((letter, index) => (
+                <button 
+                    key={index}
+                    onClick={() => handleClick(letter)}
+                    disabled={disabledLetters.includes(letter)} // Disable button if the letter is guessed
+                >
+                    {letter}
+                </button>
+            ))}
+        </div>
+    );
 };
 
 export default AlphabetButtons;

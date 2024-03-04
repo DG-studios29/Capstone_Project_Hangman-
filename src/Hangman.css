@@ -1,0 +1,138 @@
+.hangman-game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hangman-header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .hangman-figure {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .hangman-figure img {
+    max-width: 100%;
+  }
+  
+  .word-to-guess {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .word-to-guess .letter {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Score display */
+  .score-container {
+    position: absolute;
+    top: 90px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; /* Adjust font size as needed */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .score-display {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .game-over-message {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .score-display {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .action-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .action-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .action-buttons button:hover {
+    background-color: #218838;
+  }
+
+/* Alphabet buttons */
+.alphabet-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .alphabet-buttons button {
+    margin: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .alphabet-buttons button:disabled {
+    background-color: #ff5a5a; /* Change background color to red for disabled buttons */
+    cursor: not-allowed;
+  }
+  
+  .alphabet-buttons button[disabled] {
+    background-color: #ff5a5a; /* Change background color to red for disabled buttons */
+    color: #fff; /* Set text color to white */
+  }
+  
+  /* HangmanGame.css */
+
+.hint-container {
+    margin-top: 10px; /* Adjust margin top as needed */
+  }
+  
+  .hint-button {
+    background-color: #007bff; /* Blue color for button background */
+    color: #fff; /* White color for button text */
+    border: none;
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .hint-text {
+    margin-top: 5px; /* Adjust margin top as needed */
+  }
+  
+
+  
+  
