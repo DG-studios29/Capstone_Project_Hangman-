@@ -7,7 +7,7 @@ Description
 This is a simple Hangman game built with React. Players try to guess a hidden word by selecting letters. For each incorrect guess, part of a hangman figure is drawn. The game ends when the player correctly guesses the word or completes the hangman figure.
 
 # Installation Instructions
-Clone this repository to your local machine using git clone https://github.com/username/hangman-game.git.
+Clone this repository to your local machine using git clone https://github.com/DG-studios29/Capstone_Project_Hangman-
 Navigate to the directory of the game in your terminal.
 Install any necessary dependencies using npm install or yarn install.
 Run the game using npm start or yarn start.
